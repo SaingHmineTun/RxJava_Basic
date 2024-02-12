@@ -1,8 +1,12 @@
 import io.reactivex.rxjava3.annotations.NonNull;
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.core.Observer;
-import io.reactivex.rxjava3.disposables.Disposable; /**
+import io.reactivex.rxjava3.disposables.Disposable;
+
+/**
  * This is used when you want to dispose your observables
+ * The program initially executes from 1 to 100, but when it reaches, it stops the execution
+ * because I call dispose method here!
  */
 
 Disposable disposable;
