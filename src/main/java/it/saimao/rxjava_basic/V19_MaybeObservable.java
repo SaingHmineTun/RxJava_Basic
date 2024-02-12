@@ -15,7 +15,8 @@ public void main() {
 }
 
 Maybe<List<String>> createMaybeObservable() {
-    return Maybe.just(List.of("A", "B", "C"));
+    return Maybe.empty(); // On Success never calls
+//    return Maybe.just(List.of("A", "B", "C"));
 }
 
 MaybeObserver<List<String>> createMaybeObserver() {
