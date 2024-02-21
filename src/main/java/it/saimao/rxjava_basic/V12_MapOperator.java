@@ -8,6 +8,6 @@ import java.util.List;
 public class V12_MapOperator {
     public static void main(String[] args) {
         var listOfInt = List.of(1, 2, 3, 4, 5, 6, 7);
-        Observable.fromIterable(listOfInt).map((Function<Integer, Object>) integer -> "Maisung:" + (integer * 500)).subscribe(System.out::println).dispose();
+        Observable.fromIterable(listOfInt).map((Function<Integer, Object>) integer -> STR."Maisung:\{integer * 500}").subscribe(System.out::println).dispose();
     }
 }

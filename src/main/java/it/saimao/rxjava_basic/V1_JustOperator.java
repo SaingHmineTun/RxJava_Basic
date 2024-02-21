@@ -11,7 +11,7 @@ import io.reactivex.rxjava3.disposables.Disposable;
 public class V1_JustOperator {
     public static void main(String[] args) {
         // Observable - Emitting some values
-        var observable = Observable.just(1, 2, 3);
+        var observable = Observable.just(null, 2, 3);
         // Observer - Do the job if you get the values
         var observer = new Observer<Integer>() {
 

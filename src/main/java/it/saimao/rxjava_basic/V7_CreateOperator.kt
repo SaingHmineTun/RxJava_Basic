@@ -7,7 +7,7 @@ fun main() {
 
     val mListNum = intArrayOf(1, 2, 3, 4, 5)
 
-    val observable = Observable.create(ObservableOnSubscribe<Int> {
+    val observable = Observable.create {
         try {
             for (i in mListNum) {
                 it.onNext(i * 5)
@@ -16,7 +16,7 @@ fun main() {
         } catch (e: Exception) {
             it.onError(e)
         }
-    })
+    }
 
     observable.subscribe {
         println(it)

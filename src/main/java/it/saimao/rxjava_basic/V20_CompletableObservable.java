@@ -1,4 +1,6 @@
-import io.reactivex.rxjava3.core.Completable; /**
+import io.reactivex.rxjava3.core.Completable;
+
+/**
  * Completable is used when the observable has to do some work
  * without emitting any values!
  */
